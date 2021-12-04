@@ -1,7 +1,8 @@
 import "./navbar.css";
 import React, { useState } from "react";
 import Button from "../Button/Button";
-
+import iitu from '../../Images/iiitu.gif'
+import aavesh from '../../Images/logo.png'
 function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const [hide, setHide] = useState(window.innerWidth < 800 ? true : false);
@@ -22,10 +23,18 @@ function Navbar() {
     <div className={colorChange ? hide?"aavesh-nav fixed":"aavesh-nav navs fixed" :hide?"aavesh-nav ":"aavesh-nav navs" }>
       <nav className="navbar">
         <div className="nav-container">
-          <a href="/" className="navbar-brand">
+          {/* <a href="/" className="navbar-brand">
             A<span className="navbar-brand-a">a</span>ve
             <span className="navbar-brand-a">s</span>h
+          </a> */}
+          <div className="logo-group">
+          <a href="https://iiitu.ac.in/" className="navbar-brand">
+           <img src={iitu} alt="" className="iiitu" />
           </a>
+          <a href="/" className="navbar-brand">
+           <img src={aavesh} alt="" className="aavesh" />
+          </a>
+          </div>
           <div className="nav-hmburger">
             <a onClick={toogleNav}>
               <span class="navigation-button">

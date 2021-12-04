@@ -38,7 +38,7 @@ function Sectionhome() {
             praticipate?
           </p>
           <h1 className="main-heading">
-            Aavesh IIIT UNA <span className="main-heading-span">Biggest</span>
+            <span className="main-heading-span">Aavesh</span> IIIT Una's <span className="main-heading-span">Biggest</span>
             <br />
             Technical Fest <b>2</b>
             <b>0</b>
@@ -54,7 +54,7 @@ function Sectionhome() {
             </li>
           </ul>
           <div className="main-button">
-            <Button text="Paraticipate"/>
+            <Button text="Participate"/>
           </div>
           
         </div>
@@ -62,7 +62,7 @@ function Sectionhome() {
       <div class="event-countdown countdown1">
             <div className="timer">
               <div className="days">
-               - {timeLeft.days}<span>Days </span>
+            {timeLeft.days}<span>Days </span>
               </div>
               <div className="hours">
                 {timeLeft.hours}<span>Hours </span>

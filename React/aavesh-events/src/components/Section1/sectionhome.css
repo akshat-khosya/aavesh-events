@@ -1,194 +1,189 @@
-.section-home{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+.section-home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 
+  background-image: url(https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80);
+  
+  position: relative;
+  z-index: 1;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 34, 0.7);
 }
-.home-conatiner{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    top: 30vh;
-
+.home-conatiner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 30vh;
 }
-.main-banner-content{
-    padding: 0 20px;
+.main-banner-content {
+  padding: 0 20px;
 }
-.main-banner-content::before{
-    content: "";
-    position: absolute;
-    top: -4.375rem;
-    width: 100%;
-    max-width: 23.75rem;
-    text-align: center;
-    height: 31.25rem;
-    left: 18%;
-    margin-left: -190px;
-    z-index: -1;
-    border: 18px solid rgba(104,89,222,.24);
-    box-sizing: border-box;
-    box-shadow: 0 60px 40px -40px rgb(0 0 0 / 30%);
+.main-banner-content::before {
+  content: "";
+  position: absolute;
+  top: -4.375rem;
+  width: 100%;
+  max-width: 23.75rem;
+  text-align: center;
+  height: 31.25rem;
+  left: 18%;
+  margin-left: -190px;
+  z-index: -1;
+  border: 18px solid rgba(104, 89, 222, 0.24);
+  box-sizing: border-box;
+  box-shadow: 0 60px 40px -40px rgb(0 0 0 / 30%);
 }
-.main-banner-p{
-    color: #efa506;
-    font-size: 1.75rem;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    line-height: 1.9;
+.main-banner-p {
+  color: #efa506;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  line-height: 1.9;
 }
-.main-banner-p__span{
-    color: #00acee;
-    
+.main-banner-p__span {
+  color: #00acee;
 }
-.main-heading{
-    color: #fff;
-    margin: 0;
-    font-weight: 900;
-    font-size: 5rem;
-    line-height: 1.2;
-    font-family: "Poppins",sans-serif;
-    white-space: nowrap;
-    
-    
+.main-heading {
+  color: #fff;
+  margin: 0;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
 }
 .main-heading b:first-of-type {
-    color: #efa506;
+  color: #efa506;
 }
 .main-heading b:nth-of-type(2) {
-    color: #ff2d55;
+  color: #ff2d55;
 }
 .main-heading b:nth-of-type(4) {
-    color: #00acee;
+  color: #00acee;
 }
 .main-heading-span {
-    background: linear-gradient(
-180deg,transparent 80%,#ff2d55 0);
-    background-size: 100px 1.2em!important;
+  background: linear-gradient(180deg, transparent 80%, #ff2d55 0);
+  background-size: 100px 1.2em !important;
 }
-.main-detail{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
+.main-detail {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.main-deatil__item{
-    margin-right: 50px;
+.main-deatil__item {
+  margin-right: 50px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-button {
+  margin-top: 30px;
+}
+.fas {
+  padding-right: 5px;
+  color: var(--primary);
+}
+.event-countdown {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+
+  color: #fff;
+  width: 100vw;
+}
+.timer {
+  display: flex;
+  font-size: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.timer span {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 10px;
+}
+.timer div {
+  margin-right: 50px;
+  font-weight: 700;
+}
+.timer .days {
+  color: var(--primary);
+}
+.timer .hours {
+  color: #00acee;
+}
+.timer .seconds {
+  color: #efa506;
+}
+@media (max-width: 1200px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+  .main-banner-p {
+    font-size: 1.3rem;
+  }
+  .timer {
+    font-size: 3.5rem;
+  }
+  .timer span {
+    font-size: 0.7rem;
+  }
+  .home-conatiner {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .main-heading {
+    font-size: 3.3rem;
+    white-space: normal;
+  }
+  .main-banner-p {
     font-size: 1rem;
-    color:#fff;
-    font-family: "Poppins",sans-serif;
+  }
+  .timer {
+    font-size: 2.7rem;
+  }
+  .timer span {
+    font-size: 0.4rem;
+  }
+  .home-conatiner {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+  }
+  .timer div {
+    margin-right: 25px;
+  }
 }
-
-.main-button{
-    margin-top: 30px;
-}
-.fas{
-    padding-right: 5px;
-    color: var(--primary);
-}
-.event-countdown{
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    
-    color: #fff;
-    width: 100vw;
-    
-}
-.timer{
-    display: flex;
-    font-size: 4.5rem;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-.timer span{
+@media (max-width: 400px) {
+  .event-countdown {
+    left: 5%;
+  }
+  .main-heading {
+    font-size: 2.7rem;
+    white-space: normal;
+  }
+  .main-banner-p {
     font-size: 1rem;
-    color: #fff;
-    margin-left: 10px;
-}
-.timer div{
-    margin-right: 50px;
-    font-weight: 700;
-}
-.timer .days{
-    color: var(--primary);
-}
-.timer .hours{
-    color: #00acee;
-}
-.timer .seconds{
-    color: #efa506;
-}
-@media (max-width:1200px){
-    .main-heading{
-        font-size: 4rem;
-    }
-    .main-banner-p{
-        font-size: 1.3rem;
-    }
-    .timer{
-        font-size: 3.5rem;
-
-    }
-    .timer span{
-        font-size: 0.7rem;
-    }
-    .home-conatiner{
-        left: 50%;
-        transform: translateX(-50%);
-        top: 30%;
-    }
-    
   }
-  @media (max-width:800px){
-    .main-heading{
-        font-size: 3.3rem;
-        white-space:normal;
-    }
-    .main-banner-p{
-        font-size: 1rem;
-    }
-    .timer{
-        font-size: 2.7rem;
-
-    }
-    .timer span{
-        font-size: 0.4rem;
-    }
-    .home-conatiner{
-        left: 50%;
-        transform: translateX(-50%);
-        top: 30%;
-    } 
-    .timer div{
-        margin-right: 25px;
-    }
-    
+  .timer {
+    font-size: 2rem;
   }
-  @media (max-width:400px) {
-    .event-countdown{
-        left: 5%;
-    }
-    .main-heading{
-        font-size: 2.7rem;
-        white-space:normal;
-    }
-    .main-banner-p{
-        font-size: 1rem;
-    }
-    .timer{
-        font-size: 2rem;
-
-    }
-    .timer span{
-        font-size: 0.3rem;
-    }
-    
-    
-    .timer div{
-        margin-right: 10px;
-    }
-
+  .timer span {
+    font-size: 0.3rem;
   }
+
+  .timer div {
+    margin-right: 10px;
+  }
+}

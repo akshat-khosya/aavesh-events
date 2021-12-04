@@ -9,12 +9,21 @@
   z-index: 999;
 
 }
+.iiitu{
+  width: 8%;
+}
+.aavesh{
+  width: 11%;
+}
 .aavesh-nav.fixed{
     position: fixed;
     background-color:#0d1028 ;
     top: 0;
     box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
     animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
+}
+.logo-group{
+  flex: 4;
 }
 .navbar {
   display: flex;
@@ -24,18 +33,9 @@
 
 }
 .navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  line-height: inherit;
-  white-space: nowrap;
-  color: rgb(190, 16, 74);
 
-  width: auto;
+  padding: 0 20px;
+  
 }
 .navbar-brand-a{
     color: #fff;
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 .navbar-ul {
