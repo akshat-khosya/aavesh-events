@@ -19,7 +19,7 @@ function Navbar() {
   };
   window.addEventListener("scroll", changeNavbarColor);
   return (
-    <div className={colorChange ? "aavesh-nav fixed " : "aavesh-nav"}>
+    <div className={colorChange ? hide?"aavesh-nav fixed":"aavesh-nav navs fixed" :hide?"aavesh-nav ":"aavesh-nav navs" }>
       <nav className="navbar">
         <div className="nav-container">
           <a href="/" className="navbar-brand">

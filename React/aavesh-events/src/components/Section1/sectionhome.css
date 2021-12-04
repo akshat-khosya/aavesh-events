@@ -158,5 +158,33 @@
         transform: translateX(-50%);
         top: 30%;
     } 
-    .event-countdown{}
+    
+  }
+  @media (max-width:400px) {
+    .event-countdown{
+        left: 10%;
+    }
+    .main-heading{
+        font-size: 2.7rem;
+        white-space:normal;
+    }
+    .main-banner-p{
+        font-size: 1rem;
+    }
+    .timer{
+        font-size: 2rem;
+
+    }
+    .timer span{
+        font-size: 0.3rem;
+    }
+    .home-conatiner{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+    }
+    .timer div{
+        margin-right: 30px;
+    }
+
   }

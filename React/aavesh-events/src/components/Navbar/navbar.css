@@ -118,13 +118,13 @@
   .navbar-ul{
     flex-direction: column;
   }
-  .aavesh-nav{
+  .navs{
     height: 42.25vh;
   }
 }
 
 @media (max-width:400px){
-  .aavesh-nav{
+  .navs{
     height: 52vh;
   }
 }
