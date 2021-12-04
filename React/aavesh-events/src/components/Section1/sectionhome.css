@@ -5,10 +5,12 @@
 
 }
 .home-conatiner{
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%,-40%);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 30vh;
+
 }
 .main-banner-content{
     padding: 0 20px;
@@ -48,6 +50,7 @@
     font-family: "Poppins",sans-serif;
     white-space: nowrap;
     
+    
 }
 .main-heading b:first-of-type {
     color: #efa506;
@@ -67,6 +70,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
    
 }
 .main-deatil__item{
@@ -158,11 +162,14 @@
         transform: translateX(-50%);
         top: 30%;
     } 
+    .timer div{
+        margin-right: 25px;
+    }
     
   }
   @media (max-width:400px) {
     .event-countdown{
-        left: 10%;
+        left: 5%;
     }
     .main-heading{
         font-size: 2.7rem;
@@ -178,13 +185,10 @@
     .timer span{
         font-size: 0.3rem;
     }
-    .home-conatiner{
-        left: 50%;
-        transform: translateX(-50%);
-        top: 30%;
-    }
+    
+    
     .timer div{
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
   }
