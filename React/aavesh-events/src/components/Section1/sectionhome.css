@@ -1,8 +1,11 @@
 .section-home {
   position: relative;
   width: 100vw;
-  height:fit-content;
-  min-height: 100vh;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   
   background-image: url(https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80);
   
@@ -15,14 +18,16 @@
   background-color: rgba(0, 0, 34, 0.7);
 }
 .home-conatiner {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  top: 20vh;
+  height:auto;
+  margin-top: 20vh;
+  
 }
 .main-banner-content {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main-banner-content::before {
   content: "";
@@ -39,8 +44,12 @@
   box-sizing: border-box;
   box-shadow: 0 60px 40px -40px rgb(0 0 0 / 30%);
 }
-.event-logoimg{
-  width: 16%;
+.event-logo img{
+  width: 50%;
+  
+}
+.event-logo{
+  text-align: center;
 }
 .main-banner-p {
   color: #efa506;
@@ -95,10 +104,9 @@
   color: var(--primary);
 }
 .event-countdown {
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
-
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
   color: #fff;
   width: 100vw;
 }
@@ -142,11 +150,7 @@
   .timer span {
     font-size: 0.7rem;
   }
-  .home-conatiner {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30vh;
-  }
+  
 }
 @media(min-height:1080px){
   .main-heading {
@@ -161,11 +165,7 @@
   .timer span {
     font-size: 0.7rem;
   }
-  .home-conatiner {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30vh;
-  }
+
 }
 @media (max-width: 800px) {
   .main-heading {
@@ -181,19 +181,13 @@
   .timer span {
     font-size: 0.4rem;
   }
-  .home-conatiner {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30vh;
-  }
+  
   .timer div {
     margin-right: 25px;
   }
 }
 @media (max-width: 400px) {
-  .event-countdown {
-    left: 5%;
-  }
+  
   .main-heading {
     font-size: 2.7rem;
     white-space: normal;

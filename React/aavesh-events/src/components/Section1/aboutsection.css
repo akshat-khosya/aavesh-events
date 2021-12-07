@@ -52,7 +52,11 @@
 .habout-logo{
     text-align: center;
 }
-.composition .composition__photo {
+.composition__photo {
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
+    pointer-events: all;
+}
+.composition__photo:hover {
     
     transition: all .2s;
     outline-offset: 2rem; 
