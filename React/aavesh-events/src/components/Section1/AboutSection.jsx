@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./aboutsection.css";
 import Button from "../Button/Button";
 import pdf from "../../aavesh.pdf";
@@ -6,6 +6,22 @@ import logo from '../../Images/eventw.png'
 import about1 from '../../Images/about1.jpg'
 import about2 from '../../Images/abou2.jpeg'
 function AboutSection() {
+    const[newClass,setnewClass]=useState("habout-imgs");
+    function changeClass(){
+        if(newClass==="habout-imgs"){
+            setnewClass("habout-imgs composition");
+        }else{
+            setnewClass("habout-imgs");
+        }
+    }
+    useEffect(() => {
+        const timer=setTimeout(() => {
+          changeClass();
+          
+        }, 1000);
+        // Clear timeout if the component is unmounted
+       
+      });
   return (
     <>
       <section className="home-about">
@@ -31,9 +47,9 @@ function AboutSection() {
               <Button classs="habout-btn-color" target="_blank" link={pdf} text="Download Broucher" />
             </div>
           </div>
-          <div className="habout-imgs composition">
-              <img className="composition__photo composition__photo--p1" src={about1} alt="" />
-              <img className="composition__photo composition__photo--p2" src={about2} alt="" />
+          <div className={newClass}>
+              
+              <img className="composition__photo " src={about2} alt="" />
              
           </div>
         </div>
