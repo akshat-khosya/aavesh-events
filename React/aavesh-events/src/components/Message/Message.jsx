@@ -1,7 +1,12 @@
 import React from 'react'
 import './message.css'
-
+import Button from '../Button/Button'
 function Message() {
+    
+
+
+
+
     const socialicons = [
         {
             link: "https://www.facebook.com/TeamAAVESH/",
@@ -33,9 +38,9 @@ function Message() {
                     <h2 className="message-heading">Stay Connected</h2>
                 {
                             socialicons.map((icon, index) => (
-                                <a href="" className="social-icon">
+                                <a href={icon.link} target="_blank" className="social-icon">
                                     <i key={index} className={icon.src}></i>
-                                    <p className="message-heading">{icon.alt}</p>
+                                    <p className="message-sub-heading">{icon.alt}</p>
                                 </a>
                                 
                                 
@@ -53,12 +58,14 @@ function Message() {
                            <input type="email" id="email"/>
                            </div>
                            <div className="form-group">
-                           <label htmlFor="message">message</label>
-                           <textarea type="message" id="message"/>
+                           <label htmlFor="message">Message</label>
+                           <textarea rows="7"  type="message" id="message"/>
                            </div>
                            
+                           <div className="form-btn">
+                           <Button  text="Submit" />
+                           </div>
                            
-                          
                            
                        </form>
                 </div>

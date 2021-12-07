@@ -8,34 +8,7 @@ function Contactus() {
         <>
             <Template />
             <Message />
-            <p>hi</p> <p>hi</p>
-        <p>hi</p>
-        <p>hi</p>
-        <p>hi</p>
-        <p>hi</p> <p>hi</p> <p>hi</p>
-        <p>hi</p> <p>hi</p>
-        <p>hi</p>
-        <p>hi</p> <p>hi</p> <p>hi</p>
-         <p>hi</p>
-         <p>hi</p> <p>hi</p>
-         <p>hi</p>
-         <p>hi</p>
-
-          <p>hi</p>
-           <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
-            <p>hi</p>
+            
         </>
     )
 }
