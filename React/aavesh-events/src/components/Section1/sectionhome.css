@@ -1,8 +1,9 @@
 .section-home {
   position: relative;
   width: 100vw;
-  height: 100vh;
-
+  height:fit-content;
+  min-height: 100vh;
+  
   background-image: url(https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80);
   
   position: relative;
@@ -127,7 +128,27 @@
 .timer .seconds {
   color: #efa506;
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1200px   ) {
+  .main-heading {
+    font-size: 4rem;
+  }
+  .main-banner-p {
+    font-size: 1.3rem;
+  }
+  .timer {
+    font-size: 3.5rem;
+  }
+  .timer span {
+    font-size: 0.7rem;
+  }
+  .home-conatiner {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+  }
+}
+@media(min-height:1080px){
   .main-heading {
     font-size: 4rem;
   }
@@ -189,5 +210,15 @@
 
   .timer div {
     margin-right: 10px;
+  }
+}
+@media (max-width:1500px){
+  html{
+    font-size: 12px !important;
+  }
+}
+@media (max-width:1300px){
+  html{
+    font-size: 10px !important;
   }
 }
