@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import favicon from '../../Images/eventw.png'
-import logo from '../../Images/logo.png'
+import logo from '../../Images/logoaavesh.jpeg'
 import fb from '../../Images/facebook.svg'
 import ld from '../../Images/linkedin.svg'
 import ig from '../../Images/instagram.svg'
@@ -80,7 +80,7 @@ const Footer = ({ GoTo }) => {
                 <div className="footer-mid">
                     <div className="footer-title">
                         <span onClick={() => { GoTo(0) }}>
-                            Aavesh | IIIT Una
+                        TECHतत्त्व | Aavesh | IIIT Una
                         </span>
                     </div>
                     <div className="footer-social">

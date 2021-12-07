@@ -9,7 +9,7 @@ const App = () => {
         <div>
             <Header />
             <main>
-               <Contactus />
+               
                 <Home />
             </main>
             <Footer />

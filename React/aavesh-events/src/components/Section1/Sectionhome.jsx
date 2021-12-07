@@ -42,9 +42,9 @@ function Sectionhome() {
             praticipate?
           </p>
           <h1 className="main-heading">
-            <span className="main-heading-span">Aavesh</span> IIIT Una's <span className="main-heading-span">Biggest</span>
+            <span className="main-heading-span">Aavesh</span> IIIT UNA <span className="main-heading-span">Presents</span>
             <br />
-            Technical Fest <b>2</b>
+            TECHतत्त्व <b>2</b>
             <b>0</b>
             <b>2</b>
             <b>1</b>
