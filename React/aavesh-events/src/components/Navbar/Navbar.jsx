@@ -2,12 +2,13 @@ import "./navbar.css";
 import React, { useState } from "react";
 import Button from "../Button/Button";
 import iitu from '../../Images/iiitu.gif'
-import aavesh from '../../Images/logo.png'
+import aavesh from '../../Images/logoaavesh.jpeg'
+
 function Navbar() {
   const [colorChange, setColorchange] = useState(false);
-  const [hide, setHide] = useState(window.innerWidth < 800 ? true : false);
+  const [hide, setHide] = useState(window.innerWidth < 900 ? true : false);
   function toogleNav() {
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 900) {
       setHide(!hide);
     }
   }
@@ -28,9 +29,12 @@ function Navbar() {
             <span className="navbar-brand-a">s</span>h
           </a> */}
           <div className="logo-group">
-          <a href="https://iiitu.ac.in/" className="navbar-brand">
+          <a href="https://iiitu.ac.in/"  className="navbar-brand">
            <img src={iitu} alt="" className="iiitu" />
           </a>
+          
+          </div>
+          <div className="logo-group">
           <a href="/" className="navbar-brand">
            <img src={aavesh} alt="" className="aavesh" />
           </a>
@@ -52,6 +56,11 @@ function Navbar() {
               </li>
               <li className="navbar-item">
                 <a href="" className="navbar-link">
+                  About
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="" className="navbar-link">
                   Events
                 </a>
               </li>
@@ -61,11 +70,7 @@ function Navbar() {
                   Schedule
                 </a>
               </li>
-              <li className="navbar-item">
-                <a href="" className="navbar-link">
-                  Rules
-                </a>
-              </li>
+             
               {/*            optional   
               <li className="navbar-item">
                 <a href="" className="navbar-link">

@@ -10,10 +10,12 @@
 
 }
 .iiitu{
-  width: 4rem;
+  width: 8rem;
+  position: absolute;
+  top: -20%;
 }
 .aavesh{
-  width: 6rem;
+  width: 10rem;
 }
 .aavesh-nav.fixed{
     position: fixed;
@@ -92,7 +94,7 @@
   }
 
 }
-@media (max-width:800px){
+@media (max-width:900px){
   .nav-hmburger{
     opacity: 1;
     display: inline-block;

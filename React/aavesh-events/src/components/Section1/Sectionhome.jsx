@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Button from '../Button/Button'
 import "./sectionhome.css";
+import eventimg from '../../Images/eventw.png' ;
 function Sectionhome() {
     
     
@@ -8,7 +9,7 @@ function Sectionhome() {
     const calculateTimeLeft=()=>{
         
         let year = new Date().getFullYear();
-        const difference =+new Date('12/25/2021') - +new Date();
+        const difference =+new Date('12/29/2021') - +new Date();
         let timeLeft={};
         if (difference > 0) {
             timeLeft = {
@@ -33,6 +34,9 @@ function Sectionhome() {
     <div className="section-home">
       <div className="home-conatiner">
         <div className="main-banner-content">
+          <div className="event-logo">
+            <img src={eventimg} alt="" className="event-logoimg" />
+          </div>
           <p className="main-banner-p">
             Are you<span className="main-banner-p__span"> ready </span>to
             praticipate?
@@ -50,7 +54,7 @@ function Sectionhome() {
               <i class="fas fa-globe-asia"></i>Online Mode
             </li>
             <li className="main-deatil__item">
-              <i className="fas fa-calendar-alt"></i>25-31 Dec, 2021
+              <i className="fas fa-calendar-alt"></i>29-31 Dec, 2021
             </li>
           </ul>
           <div className="main-button">
