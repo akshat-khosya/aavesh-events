@@ -42,14 +42,24 @@ function Message() {
                             ))
                         }
                 </div>
-                <div className="message form">
+                <div className="message_form">
                        <form  className="message-form">
+                           <div className="form-group">
                            <label htmlFor="name">Full Name</label>
                            <input type="text" id="name"/>
-                           <label htmlFor="name"></label>
-                           <input type="text" id="name"/>
-                           <label htmlFor="name"></label>
-                           <input type="text" id="name"/>
+                           </div>
+                           <div className="form-group">
+                           <label htmlFor="email">Email</label>
+                           <input type="email" id="email"/>
+                           </div>
+                           <div className="form-group">
+                           <label htmlFor="message">message</label>
+                           <textarea type="message" id="message"/>
+                           </div>
+                           
+                           
+                          
+                           
                        </form>
                 </div>
             </div>

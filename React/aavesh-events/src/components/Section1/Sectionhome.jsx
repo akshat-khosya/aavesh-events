@@ -31,7 +31,7 @@ function Sectionhome() {
         return () => clearTimeout(timer);
       });
   return (
-    <div className="section-home">
+    <section className="section-home">
       <div className="home-conatiner">
         <div className="main-banner-content">
           <div className="event-logo">
@@ -79,7 +79,7 @@ function Sectionhome() {
               </div>
             </div>
           </div>
-    </div>
+    </section>
   );
 }
 
