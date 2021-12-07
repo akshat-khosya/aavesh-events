@@ -145,7 +145,7 @@
   .home-conatiner {
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 30vh;
   }
 }
 @media(min-height:1080px){
@@ -164,7 +164,7 @@
   .home-conatiner {
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 30vh;
   }
 }
 @media (max-width: 800px) {
@@ -184,7 +184,7 @@
   .home-conatiner {
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 30vh;
   }
   .timer div {
     margin-right: 25px;
