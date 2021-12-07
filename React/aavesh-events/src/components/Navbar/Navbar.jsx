@@ -79,7 +79,7 @@ function Navbar() {
               </li> */}
               <li className="navbar-item">
                 <a href="" className="navbar-link">
-                  Contact Us
+                  Contact
                 </a>
               </li>
             </ul>

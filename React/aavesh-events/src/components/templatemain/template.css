@@ -1,0 +1,35 @@
+.templatecontainer {
+  background-image: url("https://image.shutterstock.com/image-illustration/contact-us-icon-phone-email-260nw-1151872529.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 34, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1.5; 
+}
+.templateheading{
+    font-weight: 700;
+    font-size: 3rem;
+    
+}
+.template-subheading{
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+.location{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(153, 18, 194);
+    cursor: pointer;
+}
+.location span {
+    color: #efa506;
+}
