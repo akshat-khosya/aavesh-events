@@ -32,12 +32,12 @@
 .main-banner-content::before {
   content: "";
   position: absolute;
-  top: -4.375rem;
+  top: 16%;
   width: 100%;
   max-width: 23.75rem;
   text-align: center;
   height: 31.25rem;
-  left: 18%;
+  left: 50%;
   margin-left: -190px;
   z-index: -1;
   border: 18px solid rgba(104, 89, 222, 0.24);
@@ -62,6 +62,7 @@
   color: #00acee;
 }
 .main-heading {
+  text-align: center;
   color: #fff;
   margin: 0;
   font-weight: 900;

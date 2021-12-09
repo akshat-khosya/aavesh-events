@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import Button from '../Button/Button'
 import "./sectionhome.css";
 import eventimg from '../../Images/eventw.png' ;
+
 function Sectionhome() {
     
     
@@ -43,12 +44,13 @@ function Sectionhome() {
           </p>
           <h1 className="main-heading">
             <span className="main-heading-span">Aavesh</span> IIIT UNA <span className="main-heading-span">Presents</span>
+            
             <br />
             TECHतत्त्व <b>2</b>
             <b>0</b>
             <b>2</b>
             <b>1</b>
-          </h1>
+            </h1>
           <ul className="main-detail">
             <li className="main-deatil__item">
               <i class="fas fa-globe-asia"></i>Online Mode

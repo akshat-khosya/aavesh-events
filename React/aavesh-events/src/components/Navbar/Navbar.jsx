@@ -1,6 +1,7 @@
 import "./navbar.css";
 import React, { useState } from "react";
 import Button from "../Button/Button";
+import eventlogo from '../../Images/eventb.png'
 import iitu from '../../Images/iiitu.gif'
 import aavesh from '../../Images/logoaavesh.jpeg'
 
@@ -30,7 +31,13 @@ function Navbar() {
           </a> */}
           <div className="logo-group">
           <a href="https://iiitu.ac.in/"  className="navbar-brand">
-           <img src={iitu} alt="" className="iiitu" />
+           <img src={eventlogo} alt="" className="iiitu" />
+          </a>
+          
+          </div>
+          <div className="logo-group">
+          <a href="https://iiitu.ac.in/"  className="navbar-brand">
+           <img src={iitu} alt="" className="aaveshiit" />
           </a>
           
           </div>
@@ -50,7 +57,7 @@ function Navbar() {
           <div className={hide ? "nav-hide" : "nav-items"}>
             <ul className="navbar-ul">
               <li className="navbar-item">
-                <a href="" className="navbar-link">
+                <a href="/" className="navbar-link">
                   Home
                 </a>
               </li>
@@ -65,20 +72,20 @@ function Navbar() {
                 </a>
               </li>
 
-              <li className="navbar-item">
+              {/* <li className="navbar-item">
                 <a href="" className="navbar-link">
                   Schedule
                 </a>
-              </li>
+              </li> */}
              
-              {/*            optional   
+                        
               <li className="navbar-item">
-                <a href="" className="navbar-link">
+                <a href="/team" className="navbar-link">
                   Team
                 </a>
-              </li> */}
+              </li>
               <li className="navbar-item">
-                <a href="" className="navbar-link">
+                <a href="/contactus" className="navbar-link">
                   Contact
                 </a>
               </li>

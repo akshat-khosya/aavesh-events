@@ -1,11 +1,45 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './message.css'
 import Button from '../Button/Button'
+import axios from 'axios'
 function Message() {
     
+    const [contact,setContact]=useState({
+        name:"",
+        email:"",
+        message:""
+    });
 
+    function handelChnage(event){
+        const {name,value}=event.target;
+        setContact((prevValue) => {
+            return {
+              ...prevValue,
+              [name]: value
+          }
+          });
+    }
+    function SendMessage(event){
+        event.preventDefault();
+        console.log(contact);
+        axios.post('http://localhost:4000/sendmail', contact).then(function (response) {
+            console.log(response.data);
+            if(response.data.sent){
 
+                setContact({
+                    name:"",
+                    email:"",
+                    message:"Message Sent Successfully"
+                });
+            }
+            
+             return response.data;
+         }).catch(function (error) {
+                 console.log(error);
+             });
 
+        
+    }
 
     const socialicons = [
         {
@@ -48,22 +82,22 @@ function Message() {
                         }
                 </div>
                 <div className="message_form">
-                       <form  className="message-form">
+                       <form onSubmit={SendMessage}  className="message-form">
                            <div className="form-group">
                            <label htmlFor="name">Full Name</label>
-                           <input type="text" id="name"/>
+                           <input onChange={handelChnage} value={contact.name} name="name" type="text" id="name"/>
                            </div>
                            <div className="form-group">
                            <label htmlFor="email">Email</label>
-                           <input type="email" id="email"/>
+                           <input onChange={handelChnage} value={contact.email} name="email" type="email" id="email"/>
                            </div>
                            <div className="form-group">
                            <label htmlFor="message">Message</label>
-                           <textarea rows="7"  type="message" id="message"/>
+                           <textarea onChange={handelChnage} rows="7" value={contact.message} name="message" type="message" id="message"/>
                            </div>
                            
                            <div className="form-btn">
-                           <Button  text="Submit" />
+                           <Button type="submit"  text="Submit" />
                            </div>
                            
                            

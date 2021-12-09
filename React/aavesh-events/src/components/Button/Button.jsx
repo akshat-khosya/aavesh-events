@@ -14,7 +14,7 @@ function Button(props) {
           </a>
         </button>
       ) : (
-        <button className={classs}>
+        <button type={props.type&&props.type} className={classs}>
           
             <span className="aavesh-btn-text">
               {props.text ? props.text : "Button"}

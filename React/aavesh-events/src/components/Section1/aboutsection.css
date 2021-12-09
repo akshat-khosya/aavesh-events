@@ -9,6 +9,16 @@
     justify-content: space-evenly;
     width: 100%;
     padding-top: 7%;
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+.habout-con-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 2%;
     padding-bottom: 7%;
     font-weight: 700;
 }
@@ -30,10 +40,16 @@
 .habout-para{
     color: #707070;
     line-height: 1.9;
-    font-size: 1rem;
+    font-size: 1.4rem;
+}
+.habout-para-2{
+    color: #707070;
+    line-height: 1.9;
+    
+    font-size: 1.2rem;
 }
 .habout-btn-groups{
-    margin-top: 2%;
+    margin-top: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -55,6 +71,7 @@
 .composition__photo {
     filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
     pointer-events: all;
+    width: 110;
 }
 .composition__photo:hover {
     
@@ -80,6 +97,9 @@
         margin-bottom: 4%;
     }
     .habout-con{
+        flex-direction: column;
+    }
+    .habout-con-2{
         flex-direction: column;
     }
     

@@ -1,17 +1,12 @@
 import React from 'react'
-import Template from '../components/templatemain/Template'
-import Message from '../components/Message/Message'
-import './contactus.css'
-// import people from './Contactus/team';
-// import Card from './Contactus/Card';
-
-
-function Contactus() {
+import Teamtemplate from '../../components/templatemain/Teamtemplate'
+import Card from '../Contactus/Card'
+import people from '../Contactus/team'
+function Team() {
     return (
         <>
-            <Template />
-            <Message />
-            {/* <section className="contact-us">
+        <Teamtemplate />
+        <section className="contact-us">
             <div className="contact-us-container">
                 <div className="team">
                     <div className="row">
@@ -30,10 +25,9 @@ function Contactus() {
                     </div>
                 </div>
             </div>
-        </section> */}
-            
+        </section>
         </>
     )
 }
 
-export default Contactus
+export default Team
