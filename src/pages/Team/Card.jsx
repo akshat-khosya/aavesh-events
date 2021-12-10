@@ -1,13 +1,16 @@
 import React from 'react'
 import './card.css'
-import instagram from '../../Images/instagram.svg'
-import linkedin from '../../Images/linkedin.svg'
-import github from '../../Images/github.svg'
-import phone from '../../Images/phone.svg'
-import email from '../../Images/email.svg'
-import favicon from '../../Images/favicon.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import instagram from '../../images/instagram.svg'
+import linkedin from '../../images/linkedin.svg'
+import github from '../../images/github.svg'
+import phone from '../../images/phone.svg'
+import email from '../../images/email.svg'
+import favicon from '../../images/favicon.png'
 
 const Card = ({ name, subtitle, image, socials }) => {
+	Aos.init();
 	const getIcon = (handle) => {
 		switch (handle) {
 			case "instagram":
@@ -31,7 +34,7 @@ const Card = ({ name, subtitle, image, socials }) => {
 		else return link;
 	}
 	return (
-		<div className="card">
+		<div className="card" data-aos="fade-up">
 			<div className="card-container" style={
 				{
 					backgroundImage: `url(${image}), 
@@ -56,7 +59,7 @@ const Card = ({ name, subtitle, image, socials }) => {
 					{
 						socials.map((social, index) => (
 							<div className="card-social" key={index}>
-								<a className={`card-social-icon ${social.handle}`} href={getLink(social.handle, social.link)}>
+								<a className={`card-social-icon ${social.handle}`} href={getLink(social.handle, social.link)} target='_blank'>
 									<img
 										src={getIcon(social.handle)}
 										className="card-social-icon__img"

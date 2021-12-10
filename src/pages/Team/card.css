@@ -1,11 +1,60 @@
+html {
+	font-size: 16px;
+}
+@media (max-width: 672px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+.team {
+	width: 100%;
+}
+.team-container {
+	width: 100%;
+	padding: 0.5rem;
+	background-attachment: fixed;
+	background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png"),
+		linear-gradient(
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.95),
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0)
+		);
+}
+.team-head {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.team-head__title {
+	text-align: center;
+	margin: 1rem auto;
+	font-size: 5rem;
+	line-height: 5.25rem;
+	text-decoration: underline;
+	color: var(--indigo);
+	font-family: "Satisfy", "Google Sans", Cabin, sans-serif;
+}
+
 .card {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0.5rem;
+	padding: 1rem;
 	overflow: hidden;
+	background: transparent;
+}
+@media (max-width: 672px) {
+	.card {
+		padding: 1.5rem 2rem;
+	}
 }
 .card-container {
 	width: 100%;
@@ -22,6 +71,11 @@
 	background-size: cover;
 	background-blend-mode: darken;
 	transition: all var(--transition-time) ease-in-out;
+}
+@media (max-width: 672px) {
+	.card-container {
+		height: 30rem;
+	}
 }
 .card-details {
 	display: flex;
@@ -50,21 +104,21 @@
 	opacity: 0;
 	transition: all var(--transition-time) ease-in-out;
 	border-radius: 0 0 10px 10px;
-	/* background-image: linear-gradient(
-			rgba(255, 255, 255, 0),
-			rgba(255, 255, 255, 0.2)
-		); */
-	background-color: #f0f0f0;
+	background-image: linear-gradient(
+		rgba(255, 255, 255, 0.2),
+		rgba(255, 255, 255, 0)
+	);
+	background-color: var(--primary);
 }
 @media (max-width: 880px) {
 	.card-socials {
-		height: 2.5rem;
+		height: 2.75rem;
 		opacity: 1;
 	}
 }
 @media (max-width: 672px) {
 	.card-socials {
-		height: 2.5rem;
+		height: 3.5rem;
 		opacity: 1;
 	}
 }
@@ -87,10 +141,22 @@
 	object-fit: cover;
 	max-width: 100%;
 	max-height: 100%;
-	filter: invert(0);
+	filter: invert(1);
+}
+@media (max-width: 880px) {
+	.card-social-icon__img {
+		max-width: 90%;
+		max-height: 90%;
+	}
+}
+@media (max-width: 672px) {
+	.card-social-icon__img {
+		max-width: 85%;
+		max-height: 85%;
+	}
 }
 .card:hover .card-container {
-	outline-color: var(--indigo);
+	outline-color: var(--primary);
 }
 .card:hover .card-details__name {
 	font-size: 1.6rem;
@@ -102,4 +168,14 @@
 .card:hover .card-socials {
 	height: 2.5rem;
 	opacity: 1;
+}
+@media (max-width: 880px) {
+	.card:hover .card-socials {
+		height: 2.75rem;
+	}
+}
+@media (max-width: 672px) {
+	.card:hover .card-socials {
+		height: 3.5rem;
+	}
 }

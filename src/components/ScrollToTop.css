@@ -1,0 +1,43 @@
+.scroll-to-top {
+	background-color: var(--blue-400);
+	color: #f0f0f0;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 2000;
+	border: none;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 0;
+	height: 3.5rem;
+	width: 3.5rem;
+	overflow: visible;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+	transition: background-color 0.3s cubic-bezier(0.4, 0, 1, 1),
+		box-shadow 0.3s cubic-bezier(0.4, 0, 1, 1),
+		transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+		-webkit-transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.scroll-to-top .material-icons {
+	transition: all 500ms ease;
+}
+.scroll-to-top:hover {
+	background-color: var(--blue-100);
+	color: #121212;
+}
+.scroll-to-top:hover .material-icons {
+	transform: rotateZ(360deg);
+}
+.scroll-to-top:active,
+.scroll-to-top:focus {
+	outline: none;
+	background-color: var(--blue-700);
+	color: #f0f0f0;
+}

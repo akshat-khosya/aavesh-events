@@ -1,18 +1,19 @@
-import React from 'react'
-import './template.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./template.css";
 
 function Template() {
-    return (
-        <>
-        <div className="templatecontainer">
-        <h2 className="templateheading">Contact Us</h2>
-        <p className="template-subheading">Fell free to contact</p>
-        <p className="location">Home <span className="locationmid">/</span> Contact</p>
-            
-        </div>
-            
-        </>
-    )
+	return (
+		<>
+			<div className="templatecontainer">
+				<h2 className="templateheading">Contact Us</h2>
+				<p className="template-subheading">Feel free to contact</p>
+				<p className="location">
+				<Link to='/'>Home</Link> <span className="locationmid">/</span> <Link to='/contact'>Contact</Link>
+				</p>
+			</div>
+		</>
+	);
 }
 
-export default Template
+export default Template;
