@@ -1,223 +1,218 @@
 .aavesh-nav {
-  background: transparent;
-  position: absolute;
-  top: 2%;
-  left: 0;
-  padding: 20px;
-  width: 100%;
-  height: auto;
-  z-index: 999;
-
+	background: transparent;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	z-index: 999;
 }
-.iiitu{
-  width: 14rem;
-  position: absolute;
-  top: 0%;
-  
+.iiitu {
+	width: 14rem;
+	position: absolute;
+	top: 0%;
 }
-.aaveshiit{
-  width: 5rem;
+.aaveshiit {
+	width: 5rem;
 }
-.aavesh{
-  width: 10rem;
+.aavesh {
+	width: 10rem;
 }
-@media (max-width:600px){
-    .group-2{
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-    }
-    
+@media (max-width: 600px) {
+	.group-2 {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
 }
-.aavesh-nav.fixed{
-    position: fixed;
-    background-color:#0d1028 ;
-    top: 0;
-    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
-    animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
+.aavesh-nav.fixed {
+	position: fixed;
+	background-color: #0d1028;
+	top: 0;
+	box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+	animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
 }
-.logo-group{
-  flex: 4;
+.logo-group {
+	flex: 4;
 }
 .navbar {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0.5rem 1 rem;
-
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0.5rem 1 rem;
 }
 .navbar-brand {
-
-  padding: 0 20px;
-  
+	padding: 0 20px;
 }
-.navbar-brand-a{
-    color: #fff;
+.navbar-brand-a {
+	color: #fff;
 }
 .navbar-brand-img {
-  width: 10%;
+	width: 10%;
 }
 .nav-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 .navbar-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-evenly;
 }
 .navbar-item {
-  padding: 15px 0;
-  width: auto;
+	padding: 15px 0;
+	width: auto;
 }
 .nav-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 .navbar-link {
-  font-weight: 500;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0;
-  margin-left: 15px;
-  margin-right: 15px;
-  transition: all ease 0.5s;
+	font-weight: 500;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	transition: all ease 0.5s;
 }
 .navbar-link:hover {
-  color: var(--primary);
+	color: var(--primary);
 }
 .navbar-other {
-  margin-left: 13px;
+	margin-left: 13px;
 }
-.nav-hmburger{
-  opacity: 0;
-  display: none;
+.nav-hmburger {
+	opacity: 0;
+	display: none;
 }
-@media (max-width:1200px){
-  .navbar-other{
-    opacity: 0;
-    display: none;
-  }
-  
-
+@media (max-width: 1200px) {
+	.navbar-other {
+		opacity: 0;
+		display: none;
+	}
 }
-@media (max-width:900px){
-  .nav-hmburger{
-    opacity: 1;
-    display: inline-block;
-  }
-  .nav-container {
-    justify-content: space-between;
-  }
-  .nav-items{
-    position: absolute;
-    top: 6.25vh;
-    left: 7%;
-    background-color: #212529;
-    width: 86%;
-    min-height: 31.25vh;
-
-    
-  }
-  .nav-hide{
-    top:0;
-    opacity: 0;
-    display: none;
-  }
-  .navbar-ul{
-    flex-direction: column;
-  }
-  .navs{
-    height: 42.25vh;
-  }
+@media (max-width: 900px) {
+	.nav-hmburger {
+		opacity: 1;
+		display: inline-block;
+	}
+	.nav-container {
+		justify-content: space-between;
+	}
+	.nav-items {
+		position: absolute;
+		top: 6.25vh;
+		left: 7%;
+		background-color: #212529;
+		width: 86%;
+		min-height: 31.25vh;
+	}
+	.nav-hide {
+		top: 0;
+		opacity: 0;
+		display: none;
+	}
+	.navbar-ul {
+		flex-direction: column;
+	}
+	.navs {
+		height: 42.25vh;
+	}
 }
 
-@media (max-width:400px){
-  .navs{
-    height: 52vh;
-  }
+@media (max-width: 400px) {
+	.navs {
+		height: 52vh;
+	}
 }
 /* nav burger*/
 .navigation-button {
-  background-color: transparent;
-  width: 7rem;
-  height: 7rem;
- 
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
+	background-color: transparent;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
 }
 .navigation-icon {
-  position: relative;
-  margin-top: 50%;
-  user-select: none;
+	position: relative;
+	margin-top: 50%;
+	user-select: none;
 }
-.navigation-icon, .navigation-icon::after, .navigation-icon::before {
-  width: 3rem;
-  height: 0.25rem;
-  border-radius: 5px;
-  background-color: #fff;
-  display: inline-block;
+.navigation-icon,
+.navigation-icon::after,
+.navigation-icon::before {
+	width: 2.5rem;
+	height: 0.25rem;
+	border-radius: 5px;
+	background-color: #fff;
+	display: inline-block;
 }
-.navigation-icon::after, .navigation-icon::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
-  user-select: none;
+.navigation-icon::after,
+.navigation-icon::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	transition: all 0.2s;
+	user-select: none;
 }
 .navigation-icon::before {
-  top: -0.8rem;
+	top: -0.8rem;
 }
 .navigation-icon::after {
-  top: 0.8rem;
+	top: 0.8rem;
 }
 
 .navigation-button:active .navigation-icon {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .navigation-icons {
-  position: relative;
-  margin-top: 50%;
-  user-select: none;
+	position: relative;
+	margin-top: 50%;
+	user-select: none;
 }
-.navigation-icons, .navigation-icons::after, .navigation-icons::before {
-  width: 3rem;
-  height: 0.25rem;
-  border-radius: 5px;
-  background-color: #fff;
-  display: inline-block;
-  user-select: none;
+.navigation-icons,
+.navigation-icons::after,
+.navigation-icons::before {
+	width: 2.5rem;
+	height: 0.25rem;
+	border-radius: 5px;
+	background-color: #fff;
+	display: inline-block;
+	user-select: none;
 }
-.navigation-icons::after, .navigation-icons::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
+.navigation-icons::after,
+.navigation-icons::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	transition: all 0.2s;
 }
 .navigation-icons::before {
-  top: -0.8rem;
+	top: -0.8rem;
 }
 .navigation-icons::after {
-  top: 0.8rem;
+	top: 0.8rem;
 }
 
 .navigation-button .navigation-icons {
-  background-color: transparent;
+	background-color: transparent;
 }
 .navigation-button .navigation-icons::before {
-  top: 0;
-  transform: rotate(45deg);
+	top: 0;
+	transform: rotate(45deg);
 }
 .navigation-button .navigation-icons::after {
-  top: 0;
-  transform: rotate(-45deg);
+	top: 0;
+	transform: rotate(-45deg);
 }

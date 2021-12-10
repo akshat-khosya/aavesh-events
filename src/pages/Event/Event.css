@@ -242,7 +242,6 @@ html {
 	object-fit: cover;
 	max-width: 85%;
 	max-height: 85%;
-	pointer-events: all;
 	transition: all var(--transition-time) ease-in-out;
 	filter: opacity(0.85);
 	transform: scale(1.025);
