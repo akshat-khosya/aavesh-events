@@ -61,6 +61,11 @@ function Message() {
             link: "https://github.com/Aavesh-IIITU",
             src: "fab fa-github-square",
             alt: "GitHub"
+        },
+        {
+            link:"mailto:aavesh@iiitu.ac.in",
+            src:"fas fa-envelope-square",
+            alt:"aavesh@iiitu.ac.in"
         }
     ]
     

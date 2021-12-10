@@ -64,6 +64,12 @@
 .social-icon{
     display: flex;
 }
+.social-icon i {
+    color: black;
+}
+.social-icon i:hover{
+    color: var(--primary);
+}
 .social-icon:hover{
     color: var(--primary);
 }

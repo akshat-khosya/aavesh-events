@@ -35,13 +35,13 @@ function Navbar() {
           </a>
           
           </div>
-          <div className="logo-group">
+          <div className="logo-group group-2">
           <a href="https://iiitu.ac.in/"  className="navbar-brand">
            <img src={iitu} alt="" className="aaveshiit" />
           </a>
           
           </div>
-          <div className="logo-group">
+          <div className="logo-group group-2">
           <a href="/" className="navbar-brand">
            <img src={aavesh} alt="" className="aavesh" />
           </a>

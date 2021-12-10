@@ -21,6 +21,13 @@
 .aavesh{
   width: 10rem;
 }
+@media (max-width:600px){
+    .group-2{
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+}
 .aavesh-nav.fixed{
     position: fixed;
     background-color:#0d1028 ;

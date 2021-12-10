@@ -60,7 +60,7 @@ function Sectionhome() {
             </li>
           </ul>
           <div className="main-button">
-            <Button text="Participate"/>
+            <Button link="/" text="Participate"/>
           </div>
           
         </div>
