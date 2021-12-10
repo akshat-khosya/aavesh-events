@@ -22,7 +22,7 @@ function Message() {
     function SendMessage(event){
         event.preventDefault();
         console.log(contact);
-        axios.post('http://localhost:4000/sendmail', contact).then(function (response) {
+        axios.post('https://myownrestfullapi.herokuapp.com/sendmail', contact).then(function (response) {
             console.log(response.data);
             if(response.data.sent){
 
@@ -69,7 +69,7 @@ function Message() {
         }
     ]
     
-    
+
     
     return (
         <>
