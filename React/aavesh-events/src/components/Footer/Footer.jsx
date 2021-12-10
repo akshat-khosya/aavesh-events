@@ -50,23 +50,31 @@ const Footer = ({ GoTo }) => {
     const events = [
         {
             link: "https://akshatmitta61.github.io/treasure",
-            text: "Treasure Hunt"
+            text: "Code Chronicles"
+        },
+        {
+            link: "https://akshatmitta61.github.io/treasure",
+            text: "Tech Trivia"
         },
         {
             link: "https://akshatmitta61.github.io/quiz",
-            text: "Quiz"
+            text: "Open, Sesame!"
         },
         {
             link: "https://akshatmitta61.github.io/meme",
-            text: "Meme making"
+            text: "What The Meme!"
         },
         {
             link: "https://akshatmitta61.github.io/ideathon",
-            text: "Ideathon"
+            text: "Envision Ideathon"
         },
         {
             link: "https://akshatmitta61.github.io/stonks",
             text: "Stonks"
+        },
+        {
+            link: "https://akshatmitta61.github.io/stonks",
+            text: "Tricky Circuit"
         }
     ]
     return (
