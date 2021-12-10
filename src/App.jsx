@@ -5,6 +5,7 @@ import Contactus from './pages/Contactus'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Team from './pages/Team/team.jsx'
+import Events from './pages/Events/Events'
 
 const App = () => {
     return (
@@ -15,7 +16,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/contactus' element={<Contactus />} />
                 <Route path='/team' element={<Team />} />
-              
+                <Route path='/events' element={<Events />} />
                
                 </Routes>
             </main>

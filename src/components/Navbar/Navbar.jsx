@@ -67,7 +67,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="navbar-item">
-                <a href="" className="navbar-link">
+                <a href="events" className="navbar-link">
                   Events
                 </a>
               </li>

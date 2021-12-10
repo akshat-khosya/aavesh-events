@@ -1,0 +1,18 @@
+
+.main{
+   
+    background: linear-gradient(to bottom,#0d1c30, #0f0424, transparent), url(https://evnia-react.hibootstrap.com/static/media/slider-bg1.76732e63.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 34, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.5;
+}
