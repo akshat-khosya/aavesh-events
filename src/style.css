@@ -404,7 +404,7 @@ textarea::placeholder {
 }
 
 button {
-	background: inherit;
+	background: none;
 	color: inherit;
 	border: none;
 	outline: none;

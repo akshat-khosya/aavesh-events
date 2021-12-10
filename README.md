@@ -12,7 +12,7 @@ Aavesh Events.
 To clone copy the following command in your terminal and start development.
 
 ```sh
-git clone https://github.com/akshatmittal61/aavesh-events.git
+git clone https://github.com/akshat-khosya/aavesh-events.git
 ```
 
 cd into the directory
@@ -38,6 +38,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 -   [Akshat Mittal](https://akshatmittal61.github.io/portfolio)
 -   [Akshat Khosya](https://github.com/akshat-khosya)
+-   [Mitali Jain](https://github.com/Mitali-jain)
+-   [Pratham Singh](https://github.com)
+-   [Anubhav Goyal](https://github.com)
 
 ## References and Libraries Used
 

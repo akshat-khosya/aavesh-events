@@ -78,6 +78,7 @@ function Message() {
 							href={icon.link}
 							target="_blank"
 							className="social-icon"
+							rel="noreferrer"
 						>
 							<i key={index} className={icon.src}></i>
 							<p className="message-sub-heading">{icon.alt}</p>

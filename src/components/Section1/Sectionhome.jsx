@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import Button from "../Button/Button";
 import "./sectionhome.css";
 import eventimg from "../../Images/eventw.png";
+import ScrollToTop from "../ScrollToTop";
 
 function Sectionhome() {
 	const calculateTimeLeft = () => {
-		let year = new Date().getFullYear();
+		// let year = new Date().getFullYear();
 		const difference = +new Date("12/29/2021") - +new Date();
 		let timeLeft = {};
 		if (difference > 0) {
@@ -26,6 +27,9 @@ function Sectionhome() {
 		// Clear timeout if the component is unmounted
 		return () => clearTimeout(timer);
 	});
+	useEffect(()=>{
+		window.scrollTo(0, 0);
+	},[])
 	return (
 		<section className="section-home">
 			<div className="home-conatiner">
@@ -83,6 +87,7 @@ function Sectionhome() {
 					</div>
 				</div>
 			</div>
+			<ScrollToTop />
 		</section>
 	);
 }

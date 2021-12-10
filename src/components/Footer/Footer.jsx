@@ -2,10 +2,10 @@ import React from 'react'
 import './footer.css'
 import favicon from '../../Images/eventw.png'
 import logo from '../../Images/logoaavesh.jpeg'
-import fb from '../../Images/facebook.svg'
-import ld from '../../Images/linkedin.svg'
-import ig from '../../Images/instagram.svg'
-import gh from '../../Images/github.svg'
+import fb from '../../images/facebook.svg'
+import ld from '../../images/linkedin.svg'
+import ig from '../../images/instagram.svg'
+import gh from '../../images/github.svg'
 
 const FooterSocialIcon = ({ link, src, alt }) => {
     return (

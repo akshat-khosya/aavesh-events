@@ -55,7 +55,7 @@ function Navbar() {
 						</a>
 					</div>
 					<div className="nav-hmburger">
-						<a onClick={toogleNav}>
+						<span onClick={toogleNav}>
 							<span class="navigation-button">
 								<span
 									class={
@@ -67,7 +67,7 @@ function Navbar() {
 									&nbsp;
 								</span>
 							</span>
-						</a>
+						</span>
 					</div>
 
 					<div className={hide ? "nav-hide" : "nav-items"}>
