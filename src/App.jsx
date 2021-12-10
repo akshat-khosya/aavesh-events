@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Event from "./pages/Event/Event.jsx";
 import _ from "lodash";
 import events from "./events";
+import Events from "./pages/Events/Events.jsx;
 import EventAbout from "./pages/Event/EventAbout";
 import EventRules from "./pages/Event/EventRules";
 import EventPrizes from "./pages/Event/EventPrizes";
@@ -22,6 +23,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/contact" element={<Contactus />} />
 					<Route path="/team" element={<Team />} />
+<Route path="/events" element={<Events />} />
 					{events.map((event, index) => (
 						<>
 							<Route
