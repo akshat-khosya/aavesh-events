@@ -1,9 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import people from "./team";
 import Card from "./Card";
-import Teamtemplate from '../../components/templatemain/Teamtemplate'
+import Teamtemplate from "../../components/templatemain/Teamtemplate";
+import ScrollToTop from "../../components/ScrollToTop";
 
-const Contactus = () => {
+const Team = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 	return (
 		<>
 			<Teamtemplate />
@@ -31,8 +35,9 @@ const Contactus = () => {
 					</div>
 				</div>
 			</section>
+			<ScrollToTop />
 		</>
 	);
 };
 
-export default Contactus;
+export default Team;
