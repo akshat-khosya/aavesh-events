@@ -1,435 +1,82 @@
-html {
-	font-size: 16px;
-}
-@media (max-width: 672px) {
-	html {
-		font-size: 12px;
-	}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.event {
-	width: 100%;
-	height: 100%;
-	font-size: 16px;
-}
-@media (max-width: 672px) {
-	.event {
-		font-size: 12px;
-	}
-}
-.event-container {
-	width: 100%;
-	height: 100%;
-}
-.event-top {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-	background-color: var(--back-shadow);
-	color: var(--tcolor);
-	color: var(--bgcolor);
-	color: #f0f0f0;
-	background-attachment: fixed;
-}
-.event-top,
-.event-top-container {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	background-blend-mode: darken;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-.event-top > * {
-	width: 70%;
-	height: 30%;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-flow: column;
-}
-@media (max-width: 672px) {
-	.event-top > * {
-		width: 95%;
-	}
-}
-.event-top-head {
-	font-size: 4rem;
-	font-weight: 700;
-	letter-spacing: 0.3rem;
-	word-spacing: 0.75rem;
-	line-height: 5rem;
-	padding: 0 1rem;
-}
-.event-top-head__title {
-	max-height: 100%;
-	overflow: hidden;
-	white-space: nowrap;
-	border-right: 3px solid;
-	text-transform: uppercase;
-}
-@media (max-width: 880px) {
-	.event-top-head__title {
-		white-space: normal;
-		border-right: 0px solid;
-		font-size: 3.25rem;
-	}
-}
-.event-top-details {
-	font-size: 2rem;
-	padding: 0 2rem;
-}
-.event-top-details__mode,
-.event-top-details__schedule {
-	width: 100%;
-	height: 40%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-.event-top-details__mode__icon,
-.event-top-details__schedule__icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 15%;
-	height: 100%;
-}
-.event-top-details__mode__icon .material-icons,
-.event-top-details__schedule__icon .material-icons {
-	font-size: 2rem;
-}
-.event-body {
-	width: 100%;
-	margin: 0 auto;
-}
-.event-head {
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 0.25rem 0 0 0;
-	margin: 2rem auto;
-	font-size: 1.25rem;
-}
-@media (max-width: 880px) {
-	.event-head {
-		flex-wrap: wrap;
-	}
-}
-.event-head > * {
-	width: 25%;
-	height: 100%;
-	border-radius: 10px 10px 0 0;
-	white-space: nowrap;
-	overflow: hidden;
-	transition: all var(--transition-time) ease-in-out;
-	background-attachment: fixed;
-	background-color: #f0f0f0;
-	background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-}
-@media (max-width: 880px) {
-	.event-head > * {
-		width: 50%;
-	}
-}
-.event-head a {
-	width: 100%;
-	height: 100%;
-	padding: 1.75rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.event-about__container {
-	margin: 1.5rem 0;
-	display: flex;
-}
-.event-about__container:nth-child(1) {
-	flex-flow: row;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(1) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(2) {
-	flex-flow: row-reverse;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(2) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(3) {
-	flex-flow: row;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(3) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(4) {
-	flex-flow: row-reverse;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(4) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(5) {
-	flex-flow: row;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(5) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(6) {
-	flex-flow: row-reverse;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(6) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(7) {
-	flex-flow: row;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(7) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(8) {
-	flex-flow: row-reverse;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(8) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(9) {
-	flex-flow: row;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(9) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container:nth-child(10) {
-	flex-flow: row-reverse;
-}
-@media (max-width: 880px) {
-	.event-about__container:nth-child(10) {
-		flex-flow: column-reverse;
-	}
-}
-.event-about__container > * {
-	width: 50%;
-	height: 100%;
-}
-@media (max-width: 880px) {
-	.event-about__container > * {
-		width: 100%;
-		height: fit-content;
-	}
-}
-.event-about__container img {
-	object-fit: cover;
-	max-width: 85%;
-	max-height: 85%;
-	pointer-events: all;
-	transition: all var(--transition-time) ease-in-out;
-	filter: opacity(0.85);
-	transform: scale(1.025);
-	padding: 1rem;
-	border: 10px solid transparent;
-}
-.event-about__container img:hover {
-	filter: opacity(1) drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
-	transform: scale(1);
-	border-top: 10px solid var(--green);
-	border-right: 10px solid var(--green-700);
-	border-bottom: 10px solid var(--green-700);
-	border-left: 10px solid var(--green);
-	padding: 1rem;
-}
-.event-about__content {
-	padding: 1rem;
-	line-height: 2.25rem;
-	font-size: 2rem;
-	font-family: "Cookie", "Google Sans", Cabin, sans-serif;
-	background-size: cover;
-	background-position-y: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-.event-about__image {
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.event-rules {
-	min-height: 75vh;
-}
-.event-rules__ul {
-	width: 60%;
-	margin: 0 auto;
-	list-style: none;
-}
-@media (max-width: 880px) {
-	.event-rules__ul {
-		width: 75%;
-	}
-}
-@media (max-width: 672px) {
-	.event-rules__ul {
-		width: 95%;
-	}
-}
-.event-rules__li {
-	width: fit-content;
-	max-width: 100%;
-	height: 100%;
-	margin: 2rem auto;
-	padding: 1.5rem;
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-	background-color: var(--indigo-700);
-	background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-	color: var(--bgcolor);
-	border-top: 7.5px solid var(--red);
-	border-left: 7.5px solid var(--green);
-	border-bottom: 7.5px solid var(--blue);
-	border-right: 7.5px solid var(--yellow);
-	border-radius: 10px;
-}
-.event-prizes__dl {
-	width: 100%;
-}
-.event-prize {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.event-prize * {
-	transition: all var(--transition-time) ease-in-out;
-}
-.event-prize__img {
-	pointer-events: all;
-	object-fit: cover;
-	max-width: 85%;
-	max-height: 85%;
-}
-.event-prize__dc {
-	width: 85%;
-	position: absolute;
-	z-index: 5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-	opacity: 0;
-	color: var(--bgcolor);
-}
-@media (max-width: 880px) {
-	.event-prize__dc {
-		position: static;
-		opacity: 1;
-		color: var(--tcolor);
-	}
-}
-@media (max-width: 880px) {
-	.event-prize {
-		margin: 3rem 0;
-		flex-flow: column;
-	}
-}
-.event-prize__dt {
-	font-size: 2rem;
-	line-height: 3rem;
-	margin: 1rem 0;
-	font-family: Courgette, "Google Sans", Cabin, sans-serif;
-}
-.event-prize__dd {
-	font-size: 1.25rem;
-	line-height: 2rem;
-}
-.event-prize:nth-child(1) .event-prize__dt {
-	font-size: 2.75rem;
-}
-@media (max-width: 880px) {
-	.event-prize:nth-child(1) .event-prize__dt {
-		font-size: 2rem;
-	}
-}
-.event-prize:nth-child(1) .event-prize__dd {
-	font-size: 1.75rem;
-}
-@media (max-width: 880px) {
-	.event-prize:nth-child(1) .event-prize__dd {
-		font-size: 1.25rem;
-	}
-}
-.event-prize__dc:hover {
-	opacity: 1;
-}
-.event-prize__img:hover {
-	filter: brightness(0) blur(0.5rem)
-		drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
-}
-@media (max-width: 880px) {
-	.event-prize__img:hover {
-		filter: brightness(1) blur(0)
-			drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
-	}
-}
-.event-prize__img:hover + .event-prize__dc {
-	opacity: 1;
-}
-.event-about,
-.event-rules,
-.event-prizes {
-	width: 100%;
-	display: flex;
-	flex-flow: column;
-	padding: 0 2rem;
-	background-attachment: fixed;
-	background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-}
-@media (max-width: 672px) {
-	.event-about,
-	.event-rules,
-	.event-prizes {
-		padding: 0 0.25rem;
-	}
-}
-.event-about__title,
-.event-rules__title,
-.event-prizes__title {
-	text-align: center;
-	margin: 1rem auto;
-	font-size: 5rem;
-	line-height: 5.25rem;
-	text-decoration: underline;
-	color: var(--indigo);
-	font-family: "Satisfy", "Google Sans", Cabin, sans-serif;
-}
+.container{
+    position: relative;
+    box-shadow: 0 0 0.5rem rgb(160, 153, 153);
+    min-width: 350px;
+    max-width: 400px;
+    min-height: 350px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.container div{
+    margin-top: 5%;
 
-@keyframes typing {
-	from {
-		width: 0;
-	}
 }
-
-@keyframes blink {
-	50% {
-		border-color: transparent;
-	}
+.event_top{
+    position: relative;
+}
+.event_top p{
+ position:absolute; 
+ top: 200px;  
+ right: 0px;
+background-color: tomato;
+border-radius: 10px 0 0 0;
+width: 150px;
+padding: 5px 10px;
+font-size: 20px;
+font-weight: 500;
+text-transform: uppercase;
+color: white;
+transition: all .5s ease;
+}
+.event_top p:hover{
+    top: 190px;
+    background-color: turquoise;
+    color: black;
+}
+.event_img{
+    margin: 0;
+    margin-bottom: 10px;
+    width:100%;
+    height: 300px;
+    transition:.5s ease;
+}
+.container:hover .event_img{
+    transform: scale(1.2);
+    width:100%;
+    overflow: hidden;
+}
+.event_bottom{
+    padding: 0 20px 30px 20px;
+}
+.readmore{
+    color: tomato;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.readmore:hover::after{
+content:"...";
+}
+@media screen and (max-width:500px){
+    .content{
+        min-width: 100%;
+        justify-content: center;
+    }
+    .container{
+        max-width: 490px;
+    }
 }
