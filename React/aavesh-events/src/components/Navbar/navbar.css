@@ -10,7 +10,7 @@
 
 }
 .iiitu{
-  width: 13%;
+  width: 14rem;
   position: absolute;
   top: 0%;
   
@@ -27,6 +27,7 @@
       opacity: 0;
       visibility: hidden;
     }
+    
 }
 .aavesh-nav.fixed{
     position: fixed;
@@ -103,6 +104,7 @@
     opacity: 0;
     display: none;
   }
+  
 
 }
 @media (max-width:900px){
